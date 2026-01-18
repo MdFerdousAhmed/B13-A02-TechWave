@@ -1,0 +1,49 @@
+
+.inter{
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+}
+
+/* shared style */
+.display-flex{
+  display: flex;
+}
+/* navbar related style */
+.navbar{
+  max-width: 100%;
+  background-color: #1A0B2E;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+  display: flex;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+.navbar h1 span{
+  background: linear-gradient(to bottom left, #9100F8, #FB09B4,  #F7E93F);
+  background-clip: text;
+  color: transparent;
+}
+
+.navbar button{
+  color: white;
+  padding: 13px 16px;
+  border: none;
+  border-radius: 10px;
+  background: linear-gradient(to bottom left, #9100F8, #FB09B4,  #F7E93F);
+}
+
+.nav-links{
+  display: flex;
+  gap: 32px;
+}
+
+.nav-item{
+  list-style: none;
+}
+
+.nav-link{
+  text-decoration: none;
+  color: white;
+}
