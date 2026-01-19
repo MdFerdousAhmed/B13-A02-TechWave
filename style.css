@@ -255,6 +255,23 @@
 .featured-content span{
   color: #00FF88;
 }
+
+/* introduction relative style */
+
+#introduction{
+  background: #1A0B2E;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+}
+
+#introduction h2{
+  margin: 0 auto;
+  padding-top: 120px;
+  padding-bottom: 40px;
+}
+
 .introduction-container{
   display: flex;
   gap: 24px;
@@ -279,8 +296,7 @@
 
 .introduction-icon{
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: left;
   gap: 20px;
 }
 
