@@ -234,7 +234,7 @@
   display: grid;
   grid-template-columns: repeat(3,1fr);
   gap: 40px;
-  padding: 40px 150px 120px 150px;
+  padding: 40px 150px 0px 150px;
 }
 
 .featured-img{
@@ -254,4 +254,40 @@
 
 .featured-content span{
   color: #00FF88;
+}
+.introduction-container{
+  display: flex;
+  gap: 24px;
+  background-color: #250D44;
+  margin: 0px 150px;
+  border: none;
+  border-radius: 15px;
+  align-items: center;
+  justify-content: center;
+}
+
+.introduction-img{
+  padding: 40px;
+}
+
+.introduction-content{
+  text-align: left;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.introduction-icon{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.introduction-icon img{
+ 
+  display: flex;
+  border: 1px solid #533C72;
+  border-radius: 50%;
+  padding: 10px;
 }
