@@ -146,6 +146,7 @@
   justify-content: center;
   background: rgba(35, 14, 61, 1);
   color: white;
+  /* margin: 120px 200px; */
 }
 #card h2{
   margin: 0 auto;
@@ -159,6 +160,9 @@
   grid-template-columns: repeat(3,1fr);
   grid-template-rows: repeat(3,1fr);
   gap: 30px;
+  /* margin: 40px 200px; */
+  padding: 40px 150px 120px 150px;
+  /* padding-bottom: 120px; */
 }
 
 .card-1{
@@ -211,4 +215,43 @@
   background: rgba(53, 17, 101, 0.4);
   grid-column: span 1;
   grid-row: span 1;
+}
+
+/* featured related style */
+#featured{
+  background: #1A0B2E;
+  align-items: center;
+  text-align: center;
+  color: white;
+}
+#featured h2{
+  margin: 0 auto;
+  padding-top: 120px;
+  padding-bottom: 40px;
+}
+
+.featured-container{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 40px;
+  padding: 40px 150px 120px 150px;
+}
+
+.featured-img{
+  border: none;
+  background: #250D44;
+  border-radius: 15px;
+}
+
+.featured-img iframe{
+  border-radius: 15px;
+}
+
+.featured-content{
+  text-align: left;
+  padding: 24px;
+}
+
+.featured-content span{
+  color: #00FF88;
 }
