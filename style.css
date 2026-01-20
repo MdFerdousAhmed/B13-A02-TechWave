@@ -30,7 +30,7 @@
   color: white;
   padding: 13px 16px;
   border: none;
-  border-radius: 10px;
+  border-radius: 50px;
   background: linear-gradient(to bottom left, #9100F8, #FB09B4,  #F7E93F);
 }
 
@@ -114,14 +114,14 @@
   padding:13px 20px;
   color: white;
   border: none;
-  border-radius: 10px;
+  border-radius: 50px;
 }
 .button .button-2{
   background:none;
   color: #00FF88;
   padding:13px 20px;
   border:1px solid #00FF88;
-  border-radius: 10px;
+  border-radius: 50px;
 }
 
 /* podcast relative style */
@@ -326,15 +326,17 @@
 
 /* footer related style */
 #footer{
-  width: 100%;
+  max-width: 100%;
   background-image: url(assets/footer-bg.png);
   background-position: center;
   background-repeat: no-repeat;
+  background-size: cover;
   color: white;
   align-items: center;
   justify-content: center;
   text-align: center;
   padding-bottom: 120px;
+  /* margin: 0 auto; */
 }
 
 #footer h1{
@@ -351,19 +353,23 @@
 
 .footer-img{
   display: flex;
+  font-size: 20px;
   gap: 40px;
   align-items: center;
   justify-content: center;
   text-align: center; 
 }
 
-/* media  */
+/* media  style */
 @media screen and ( max-width:576px){
   .navbar{
-    /* display: grid; */
-    justify-content: space-between;
+    display: grid;
+    justify-content: center;
     align-items: center;
-    display: list-item;
+  }
+
+  .nav-links,.navbar button{
+    display: none;
   }
 
   .hero-button{
@@ -392,10 +398,9 @@
 }
 
 .card-1,.card-2,.card-3,.card-4,.card-5{
-  /* grid-column: span 1; */
-  /* grid-row: span 1; */
   height: 200px;
   width: 300px;
+  margin: 0 90px;
 }
 
 #card h2{
@@ -404,9 +409,9 @@
 
 .introduction-container{
   flex-direction: column;
-  margin: 0 20px 0 20px;
-  margin-left: 100px;
-
+  margin: 0 30px;
+  gap: 5px;
+  
 }
 
 .introduction-icon{
@@ -420,7 +425,7 @@
 .footer-img{
   display: grid;
   grid-template-columns: repeat(2,1fr);
-  gap: 20px;
+  gap: 10px;
   margin: 0 auto;
   
 }
