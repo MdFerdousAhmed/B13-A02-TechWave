@@ -373,61 +373,119 @@
   }
 
   .hero-button{
-  padding-left: 300px;
+    padding-left: 300px;
   }
 
   .podcast-content{
-  grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(2,1fr);
   
-}
+  }
 
-.podcast-content,
-.card-container,
-.podcast-container,
-.featured-container,
-.introduction-content,
-.introduction-icon{
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-}
+  .podcast-content,
+  .card-container,
+  .podcast-container,
+  .featured-container,
+  .introduction-content,
+  .introduction-icon{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
 
-.card-container,
-.featured-container{
-  grid-template-columns: repeat(1,1fr);
-}
+  .card-container,
+  .featured-container{
+    grid-template-columns: repeat(1,1fr);
+  }
 
-.card-1,.card-2,.card-3,.card-4,.card-5{
-  height: 200px;
-  width: 300px;
-  margin: 0 90px;
-}
+  .card-1,.card-2,.card-3,.card-4,.card-5{
+    height: 200px;
+    width: 300px;
+    margin: 0 90px;
+  }
 
-#card h2{
-  font-size: 40px;
-}
+  #card h2{
+    font-size: 40px;
+  }
 
-.introduction-container{
-  flex-direction: column;
-  margin: 0 30px;
-  gap: 5px;
+  .introduction-container{
+    flex-direction: column;
+    margin: 0 30px;
+    gap: 5px;
   
-}
+  }
 
-.introduction-icon{
-  margin-bottom: 24px;
-}
+  .introduction-icon{
+    margin-bottom: 24px;
+  }
 
-#footer h1{
-  padding-top: 97px;
-}
+  #footer h1{
+    padding-top: 97px;
+  }
 
-.footer-img{
-  display: grid;
-  grid-template-columns: repeat(2,1fr);
-  gap: 10px;
-  margin: 0 auto;
+  .footer-img{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 10px;
+    margin: 0 auto;
   
-}
+  }
 
+}
+@media screen and (min-width:576px) and (max-width:992px) {
+  .hero-button{
+    padding-left: 520px;
+  }
+
+  .podcast-content{
+    grid-template-columns: repeat(2,1fr);
+  }
+
+  .podcast-content,
+  .card-container,
+  .podcast-container,
+  .featured-container,
+  .introduction-content,
+  .introduction-icon{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .card-container,
+  .featured-container{
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(1,1fr);
+  }
+
+  .card-1,.card-2,.card-3,.card-4,.card-5{
+    grid-column: span 2;
+    grid-row: span 1;
+  }
+
+  #card h2{
+    font-size: 40px;
+  }
+
+  .introduction-container{
+    flex-direction: column;
+    margin: 0 30px;
+    gap: 0px;
+  
+  }
+
+  .introduction-icon{
+    margin-bottom: 24px;
+  }
+
+  #footer h1{
+    padding-top: 97px;
+  }
+
+  /* .footer-img{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 10px;
+    margin: 0 auto;
+  
+  } */
 }
